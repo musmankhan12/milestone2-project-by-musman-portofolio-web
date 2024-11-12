@@ -85,16 +85,16 @@ const Work = () => {
                           {project.num}
                         </div>
                         {/* project categary  */}
-                        <h2 className="text-[42px] font-bold leading-3 text-white group-hover:text-accent transition-all duration-500 capitalize">
+                        <h2 className="text-[42px] font-bold leading-3 text-white group-hover:text-lime-500 transition-all duration-500 capitalize">
                             {project.category} project
                         </h2>
                         {/* project description  */}
-                        <p className="text-white/60">{project.description}</p>
+                        <p className="text-white">{project.description}</p>
                         {/* stock */}
                         <ul className="flex gap-6">
                             {project.stack.map((item, index) => {
                                 return (
-                                    <li key={index} className="text-xl text-accent">
+                                    <li key={index} className="text-xl text-lime-500">
                                        {item.name}
                                        {/* remove the last comma */}
                                        {index !== project.stack.length - 1 && ","}
@@ -110,7 +110,7 @@ const Work = () => {
                         <TooltipProvider delayDutaion={100}>
                             <Tooltip>
                                 <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                                    <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                                    <BsArrowUpRight className="text-white text-3xl group-hover:text-lime-500" />
                                 </TooltipTrigger>
                                 <TooltipContent>
                                     <p>Live project</p>
@@ -123,7 +123,7 @@ const Work = () => {
                         <TooltipProvider delayDutaion={100}>
                             <Tooltip>
                                 <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                                    <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                                    <BsGithub className="text-white text-3xl group-hover:text-lime-500" />
                                 </TooltipTrigger>
                                 <TooltipContent>
                                     <p>GitHub project</p>

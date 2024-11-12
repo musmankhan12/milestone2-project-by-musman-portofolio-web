@@ -12,13 +12,13 @@ const Home = () => {
       <div className="container mx-auto h-full ">
         <div className=" flex  mr-[100px]  flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
          {/* text */}
-         <div className="text-center  xl:text-left order-2 xl:order-none ">
+         <div className="text-center ml-10 xl:text-left order-2 xl:order-none ">
           <span className="text-xl">Software Developer</span>
           <h1 className="h1 mb-6">
             Hello I'm <br /> <span className="text-lime-500">Muhammad Usman</span>
           </h1>
           <p className="mx-w-[500px] mb-9 text-white/80">
-          I am a Front end web Developer and a student of GIAIC.   
+          I am a Front-End Web-Developer and a student of GIAIC.   
           </p>
           {/* btn and socials */}
           <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -31,13 +31,13 @@ const Home = () => {
               <FiDownload className="text-xl" />
             </Button>
             <div className="mb-8 xl:mb-0">
-              <Social containerStyles="flex gap-6" iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text=accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
+              <Social containerStyles="flex gap-6" iconStyles="w-9 h-9 border border-lime-500 rounded-full flex justify-center items-center text-white text-base hover:bg-lime-500 hover:text-primary hover:transition-all duration-500"
               />
               </div>
           </div>
          </div>
          {/* photo */}
-         <div className="">
+         <div className="ml-10">
           <Photo />
          </div>
         </div>
@@ -54,3 +54,9 @@ export default Home;
 
 // containerStyles="flex gap-6"
 // iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
+
+
+
+
+
+// git remote add origin https://github.com/musmankhan12/milestone-2-portofolio-web-by-musman.git

@@ -211,11 +211,11 @@ className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
         {experience.items.map((item, index )=>{
             return <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex 
              flex-col justify-center items-center lg:items-start gap-1 ">
-                <span className="text-accent ">{item.Duration}</span>
+                <span className="text-lime-500 ">{item.Duration}</span>
                 <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                 <div className="flex items-center gap-3">
                     {/* dot */}
-                    <span className="w-[6px] h-[6px] rounded-full  bg-accent "></span>
+                    <span className="w-[6px] h-[6px] rounded-full  bg-lime-500 "></span>
                     <p className="text-white/60">{item.Company}</p>
                 </div>
             </li>
@@ -237,11 +237,11 @@ className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
         {education.items.map((item, index )=>{
             return <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex 
              flex-col justify-center items-center lg:items-start gap-1 ">
-                <span className="text-accent ">{item.Duration}</span>
+                <span className="text-lime-500 ">{item.Duration}</span>
                 <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.Degree}</h3>
                 <div className="flex items-center gap-3">
                     {/* dot */}
-                    <span className="w-[6px] h-[6px] rounded-full  bg-accent "></span>
+                    <span className="w-[6px] h-[6px] rounded-full  bg-lime-500 "></span>
                     <p className="text-white/60">{item.Institute}</p>
                 </div>
             </li>
@@ -268,7 +268,7 @@ className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
 <TooltipProvider  delayDuration={100}>
     <Tooltip>
         <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-            <div className="text-6xl group-hover:text-accent transition-all duration-300">{skills.icon}</div>
+            <div className="text-6xl group-hover:text-lime-500 transition-all duration-300">{skills.icon}</div>
         </TooltipTrigger>
         <TooltipContent>
             <p  className="capitalize">{skills.name}</p>
@@ -291,7 +291,7 @@ className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
             <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
             <ul className="grid grid-cols-1 xl:gide-cols-2 gap-y-6 max-w-620px] mx-auto xl:mx-0">{about.Info.map((item, index)=> {
                 return<li key={index} className="flex items-center justify-center xl:justify-start  gap-4 ">
-                    <span className="text-accent">{item.fieldName}</span>
+                    <span className="text-lime-500">{item.fieldName}</span>
                     <span className="text-xl">{item.fieldValue}</span>
                 </li>
             })

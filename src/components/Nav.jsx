@@ -31,12 +31,12 @@ const Nav = () => {
     const pathname = usePathname();
     console.log(pathname)
     return( 
-    <nav className="flex gap-8 justify-end mr-10 mb-16">
+    <nav className="flex gap-8 justify-end ">
         {links.map((link, index)=> {
             return ( <Link href={link.path} key={index}
              className={`${
-              link.path === pathname && "text-accent border-b-2 border-accent"
-             } capitalize font-medium hover:text-accent transition-all`}
+              link.path === pathname && "text-lime-500 border-b-2 border-lime-500"
+             } capitalize font-medium hover:text-lime-500 transition-all`}
              >
                 {link.name}
             </Link>
